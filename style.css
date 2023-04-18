@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+.game-header {
+  text-align: center;
+  margin: 50px;
+  font-size: 2rem;
+}
+
+#game-result {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 30px;
+  height: 30px;
+}
+
+#game-board {
+  display: grid;
+  list-style: none;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  height: 60%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+.game-cell {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+}
